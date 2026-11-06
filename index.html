@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Read-Aloud Directory — Free text-to-speech and read-aloud helpers for listeners</title>
+<meta name="description" content="A plain-English directory of free text-to-speech and read-aloud helpers: browser read modes, phone equivalents, free TTS apps, and e-readers with synthetic narration.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <p class="kicker">Freebie directory</p>
+  <h1>Free Read-Aloud Directory</h1>
+  <p class="lede">Free text-to-speech and read-aloud helpers for readers who prefer
+  listening — browser read modes, phone equivalents, free TTS apps, and e-readers
+  with synthetic narration. Every entry lists its platform, whether it works
+  offline, what to check before you rely on it, and a one-line plain-English verdict.</p>
+  <p class="disclaimer">Independent, non-affiliated guide. Features change often —
+  each entry tells you what to check so you can confirm it still works on <em>your</em> device.
+  This is an accessibility/education resource, not medical or legal advice.</p>
+</header>
+
+<section class="filters" aria-label="Filters">
+  <div class="filter-group" id="category-filters" role="group" aria-label="Category">
+    <button class="filter active" data-filter="*" aria-pressed="true">All</button>
+    <button class="filter" data-filter="browser" aria-pressed="false">Browser read modes</button>
+    <button class="filter" data-filter="phone" aria-pressed="false">Phone equivalents</button>
+    <button class="filter" data-filter="tts" aria-pressed="false">Free TTS apps</button>
+    <button class="filter" data-filter="reader" aria-pressed="false">E-readers</button>
+    <button class="filter" data-filter="listen" aria-pressed="false">Bonus listening</button>
+  </div>
+  <label class="offline-toggle">
+    <input type="checkbox" id="offline-only">
+    Works offline only
+  </label>
+  <p id="result-count" class="result-count" aria-live="polite"></p>
+</section>
+
+<main id="directory">
+
+  <h2 class="section-title" id="browser">1. Browser read modes</h2>
+  <p class="section-note">If you are already using a modern browser, you may have a
+  decent robot reader hiding in a menu. Start here — it is the cheapest win.</p>
+
+  <article class="entry" data-category="browser" data-offline="partial">
+    <h3>Microsoft Edge — Read Aloud (Immersive Reader)</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Windows, macOS, Linux, iPad, Android</li>
+      <li><strong>Offline:</strong> <span class="flag partial">Partial</span> — some voices download; natural voices generally need a connection</li>
+      <li><strong>What it checks:</strong> Right-click the page or open the Reader view, then check voice quality, the speed slider (0.5&times; to 3&times;), word highlighting, and whether a natural-sounding voice is available for your language</li>
+    </ul>
+    <p class="verdict">The easiest free read-aloud on a laptop — right-click any page and hit “Read aloud.”</p>
+  </article>
+
+  <article class="entry" data-category="browser" data-offline="partial">
+    <h3>Google Chrome for Android — “Listen to this page”</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Android (Chrome app)</li>
+      <li><strong>Offline:</strong> <span class="flag partial">Partial</span> — prompted voices download to the phone</li>
+      <li><strong>What it checks:</strong> Open any page, tap the three-dot menu, and look for “Listen to this page”; check language support (about 10 languages), playback speed, and that it works inside Reader mode</li>
+    </ul>
+    <p class="verdict">A surprisingly good one-tap reader built right into Chrome on your phone.</p>
+  </article>
+
+  <article class="entry" data-category="browser" data-offline="yes">
+    <h3>Apple Spoken Content — Speak Screen / Speak Selection</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> iPhone, iPad, macOS</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> — built-in voices work with airplane mode</li>
+      <li><strong>What it checks:</strong> Settings &rarr; Accessibility &rarr; Spoken Content; check “Speak Screen” (two-finger swipe from the top), word highlighting, the speech-rate dial, and nicer voices under “Voices” (some high-quality ones need one download)</li>
+    </ul>
+    <p class="verdict">A built-in, fully offline bed-time reader for anything on an iPhone or iPad.</p>
+  </article>
+
+  <article class="entry" data-category="browser" data-offline="yes">
+    <h3>Microsoft Word Immersive Reader — Read Aloud</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Word on Windows, Mac, iPad, web (free Word Online)</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> on desktop reads; <span class="flag partial">Partial</span> in the web version</li>
+      <li><strong>What it checks:</strong> Review (or View) tab &rarr; Read Aloud; check voice choices, speed, and whether your paid/free Word account unlocks the same voices as Edge</li>
+    </ul>
+    <p class="verdict">Great for reading back your own documents without leaving Word.</p>
+  </article>
+
+  <h2 class="section-title" id="phone">2. Phone equivalents</h2>
+  <p class="section-note">The phone is where most people listen. These turn your
+  pocket device into a free narration machine.</p>
+
+  <article class="entry" data-category="phone" data-offline="yes">
+    <h3>Google Play Books — “Listen” to your own e-books</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Android, iOS, web</li>
+      <li><strong>Offline:</strong> <span class="flag partial">Partial</span> — some auto-narration voices download</li>
+      <li><strong>What it checks:</strong> Upload your own EPUB/PDF to Play Books, open it, tap “Listen”; check whether auto-narration is offered for that book, voice options, and page-turn highlighting</li>
+    </ul>
+    <p class="verdict">Turns a book you already own into an instant audiobook voiceover — for free.</p>
+  </article>
+
+  <article class="entry" data-category="phone" data-offline="yes">
+    <h3>Android Select to Speak (accessibility)</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Android (Accessibility settings)</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> — after the offline voice pack downloads</li>
+      <li><strong>What it checks:</strong> Settings &rarr; Accessibility &rarr; Select to Speak; check tap-to-read on screens, camera capture (photograph text and hear it), and that your installed TTS voice offers offline download</li>
+    </ul>
+    <p class="verdict">Point your phone at a menu or letter and have it read to you — brilliant for print, too.</p>
+  </article>
+
+  <article class="entry" data-category="phone" data-offline="yes">
+    <h3>@Voice Aloud Reader (Android)</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Android app</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> — reads local files with an offline TTS engine</li>
+      <li><strong>What it checks:</strong> Open EPUB, PDF, DOCX, TXT, or a web article; check the reading queue, background playback, speed, and whether your phone’s free TTS voice sounds acceptable (that’s the engine, not the app)</li>
+    </ul>
+    <p class="verdict">The old faithful “read my files out loud” Android app — free and surprisingly complete.</p>
+  </article>
+
+  <article class="entry" data-category="phone" data-offline="no">
+    <h3>NaturalReader (free tier)</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> iOS, Android, web browser</li>
+      <li><strong>Offline:</strong> <span class="flag no">No</span> — the free tier is mostly online</li>
+      <li><strong>What it checks:</strong> Free-plan limits (voice selection, words per session, PDF/DOCX upload rules); check it never asks for payment details to listen; skip paid plans unless you truly need premium voices</li>
+    </ul>
+    <p class="verdict">Smooth voices and a nice app, but treat the free tier as a testing ground, not a subscription trap.</p>
+  </article>
+
+  <h2 class="section-title" id="tts">3. Free TTS apps (computer, local, and web)</h2>
+  <p class="section-note">Tools that speak files or generate spoken audio, running on
+  your own machine or in a free web tool.</p>
+
+  <article class="entry" data-category="tts" data-offline="yes">
+    <h3>Balabolka (Windows)</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Windows (desktop, free)</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> — fully offline with built-in Windows voices</li>
+      <li><strong>What it checks:</strong> Open EPUB, PDF, DOCX, TXT and read or export audio files (MP3/WAV using compatible voices); check your Windows voice quality first — the app can only sound as good as the installed voices</li>
+    </ul>
+    <p class="verdict">No-frills, forever-free Windows workhorse that reads anything and can record it.</p>
+  </article>
+
+  <article class="entry" data-category="tts" data-offline="yes">
+    <h3>Piper TTS (open source, local)</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Windows, macOS, Linux, Raspberry Pi (command line / hobbyist)</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> — runs 100% on your own hardware</li>
+      <li><strong>What it checks:</strong> Download a voice model, feed it text or text files; check model size vs. your hardware, speed on older machines, and that you are comfortable with a terminal (there is no pretty window)</li>
+    </ul>
+    <p class="verdict">Free, private, offline robot voices for tinkerers — the audio you make never leaves your home.</p>
+  </article>
+
+  <article class="entry" data-category="tts" data-offline="no">
+    <h3>TTSMaker (free web TTS)</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Web browser (any device)</li>
+      <li><strong>Offline:</strong> <span class="flag no">No</span> — everything happens in the browser tab</li>
+      <li><strong>What it checks:</strong> Character limits per run, voice library by language, MP3/WAV download, and the usage terms for whatever you generate; check output before using it for anything public</li>
+    </ul>
+    <p class="verdict">Fast free text-to-audio with downloadable files — handy for small projects, not for whole books.</p>
+  </article>
+
+  <article class="entry" data-category="tts" data-offline="yes">
+    <h3>Microsoft Windows Narrator (built-in)</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Windows (built-in screen reader)</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> — installed with Windows</li>
+      <li><strong>What it checks:</strong> Ctrl+Win+Enter to start it; check Narrator view (Caps+Space) for continuous reading of pages and PDFs, and adjust speed with Caps+Plus/Minus; it is a screen reader first, so browsing feels clunky</li>
+    </ul>
+    <p class="verdict">Clunky for casual listening, but zero-install and invaluable when nothing else is on the PC.</p>
+  </article>
+
+  <article class="entry" data-category="tts" data-offline="partial">
+    <h3>Audiobookshelf (self-hosted server)</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Windows, macOS, Linux server + phone apps</li>
+      <li><strong>Offline:</strong> <span class="flag partial">Partial</span> — download audiobooks for offline play; e-book narration is limited</li>
+      <li><strong>What it checks:</strong> Run the free server on a spare PC or NAS, point it at your audiobook/e-book folders, then check the Android/iOS apps for offline listening, bookmarks, and sleep timer</li>
+    </ul>
+    <p class="verdict">For people with an audiobook collection and one spare computer — your private listening library.</p>
+  </article>
+
+  <h2 class="section-title" id="reader">4. E-readers with synthetic narration</h2>
+  <p class="section-note">A few e-ink readers (and the Kindle) can speak a book out
+  loud with no phone required.</p>
+
+  <article class="entry" data-category="reader" data-offline="yes">
+    <h3>Amazon Kindle — VoiceView / Assistive Reader</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Kindle e-readers (feature varies by model and region)</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> — voices run on the device</li>
+      <li><strong>What it checks:</strong> On your model, open Settings &rarr; Accessibility; check that VoiceView or Assistive Reader is present, works with Bluetooth earbuds, and reads the book being opened (some models only read menus)</li>
+    </ul>
+    <p class="verdict">Real synthetic narration straight from your Kindle — but check your exact model first, support varies wildly.</p>
+  </article>
+
+  <article class="entry" data-category="reader" data-offline="yes">
+    <h3>PocketBook — built-in TTS</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Selected PocketBook e-readers (e.g., higher-end models)</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> — everything on the device</li>
+      <li><strong>What it checks:</strong> In an open book, tap the speaker icon or menu entry for TTS; check your model is on the TTS list, format support (EPUB/PDF), and that the robotic English voice is tolerable to you</li>
+    </ul>
+    <p class="verdict">Real e-ink + real read-aloud in one pocket device — voices are flat but the e-ink is lovely.</p>
+  </article>
+
+  <article class="entry" data-category="reader" data-offline="yes">
+    <h3>Onyx Boox — TTS on an Android e-ink screen</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> Boox Android e-readers/tablets</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> — offline voices; install Android TTS apps like anywhere else</li>
+      <li><strong>What it checks:</strong> Open a book and tap the speaker icon, or install a free TTS engine in Android settings; check voice packs for offline use and that e-ink refresh doesn’t stutter audio</li>
+    </ul>
+    <p class="verdict">The flexible one — a full Android e-reader, so any free TTS app on this list is one install away.</p>
+  </article>
+
+  <h2 class="section-title" id="listen">5. Bonus: free listening that isn’t synthetic</h2>
+  <p class="section-note">Not text-to-speech, but if the goal is “read with my ears
+  for free,” these belong on the shelf.</p>
+
+  <article class="entry" data-category="listen" data-offline="partial">
+    <h3>Libby — free audiobooks & e-books from your library</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> iOS, Android, Kindle pairing, web</li>
+      <li><strong>Offline:</strong> <span class="flag partial">Partial</span> — downloads for offline listening are supported</li>
+      <li><strong>What it checks:</strong> Library card access, whether your library offers both audiobooks and e-books, hold queues, loan periods (usually 7–21 days), and offline download in the app</li>
+    </ul>
+    <p class="verdict">Professional human narration, completely free with a library card — the best listener deal available.</p>
+    <p class="tag note-tag">Human narration, not TTS</p>
+  </article>
+
+  <article class="entry" data-category="listen" data-offline="yes">
+    <h3>hoopla — audiobooks, comics & courses from many libraries</h3>
+    <ul class="meta">
+      <li><strong>Platform:</strong> iOS, Android, web, some TVs/car systems</li>
+      <li><strong>Offline:</strong> <span class="flag yes">Yes</span> — in-app downloads on supported mediums</li>
+      <li><strong>What it checks:</strong> Whether your library licenses hoopla, monthly borrow limits, whether an item is “instant” (no holds) or flex (with waiting), and offline download availability</li>
+    </ul>
+    <p class="verdict">A second library card in app form — instant borrows, no holds line, no fees.</p>
+    <p class="tag note-tag">Human narration, not TTS</p>
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <p>Curated with care by <strong>Asdale Dynamics, LLC</strong> — beginner-friendly AI
+  education, books, guides, and practical tools. Plain English, step by step, never condescending.</p>
+  <p>Part of the free-tech guide family: see also <em>ai-narration-choices-guide</em>
+  (audiobook narration choices for authors) and <em>free-large-print-tech-kit</em>
+  (large-print and low-vision print resources).</p>
+  <p>Released under the MIT License. All trademarks belong to their respective
+  owners; listings here do not imply affiliation or endorsement.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
